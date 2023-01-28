@@ -36,7 +36,7 @@ module.exports = {
       return;
     }
 
-    if (process.env.IGNORED.includes(from) && text.charAt() === '.') {
+    if (process.env.IGNORED.split(',').includes(from) && text.charAt() === '.') {
       debug.extend('chat')('ignored %s', 'it should be ignored');
       return;
     }
