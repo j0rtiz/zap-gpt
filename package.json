@@ -1,10 +1,10 @@
 {
   "name": "zap-gpt",
   "version": "1.0.0",
-  "main": "bot.js",
+  "main": "index.js",
   "scripts": {
     "start": "node .",
-    "dev": "nodemon ."
+    "dev": "DEBUG=bot:* nodemon ."
   },
   "dependencies": {
     "dotenv": "^16.0.3",
@@ -12,6 +12,7 @@
     "venom-bot": "^4.0.9"
   },
   "devDependencies": {
+    "debug": "^4.3.4",
     "nodemon": "^2.0.20",
     "prettier": "^2.8.3"
   }
